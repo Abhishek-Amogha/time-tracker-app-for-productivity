@@ -1,0 +1,18 @@
+#:kivy 2.0.0
+
+<ResultItem>:
+    orientation: 'horizontal'
+    Label:
+        text: root.activity
+    Label:
+        text: f"{root.hours} hours, {root.minutes} minutes"
+
+<ResultsScreen>:
+    viewclass: 'ResultItem'
+    RecycleBoxLayout:
+        orientation: 'vertical'
+        default_size: None, dp(30)
+        default_size_hint: 1, None
+        size_hint_y: None
+        height: self.minimum_height
+        spacing: dp(10)
