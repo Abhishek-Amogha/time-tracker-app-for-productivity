@@ -51,4 +51,50 @@ Your feedback is valuable! If you have suggestions, bug reports, or feature requ
 
 ## Building the APK
 
-You can easily build an apk using this simple kivy code. The esiest way is to use the google colab method. You can follow any tutorial. Use the buildozer.spec file given in this repository or read it and make the necessary changes required.
+You can easily build an apk using this simple kivy code. The esiest way is to use the google colab method. You can follow any tutorial. Use the buildozer.spec file given in this repository or read it and make the necessary changes required. The recommended commands on google colab are as follows:
+
+	!pip install buildozer
+#
+ 	!pip install cython
+#
+  	!sudo apt-get install -y \
+    python3-pip \
+    build-essential \
+    git \
+    python3 \
+    python3-dev \
+    ffmpeg \
+    libsdl2-dev \
+    libsdl2-image-dev \
+    libsdl2-mixer-dev \
+    libsdl2-ttf-dev \
+    libportmidi-dev \
+    libswscale-dev \
+    libavformat-dev \
+    libavcodec-dev \
+    zlib1g-dev
+
+#
+	!sudo apt update
+#
+ 	!sudo apt upgrade
+#
+	!sudo apt update
+#
+	!sudo apt install -y git zip unzip openjdk-17-jdk python3-pip autoconf libtool pkg-config zlib1g-dev libncurses5-dev libncursesw5-dev libtinfo5 cmake libffi-dev libssl-dev
+#
+	!pip3 install --upgrade Cython==0.29.33 virtualenv  # the --user should be removed if you do this in a venv
+#
+	!sudo apt-get install -y \
+    libgstreamer1.0 \
+    gstreamer1.0-plugins-base \
+    gstreamer1.0-plugins-good
+#
+	!sudo apt-get install autopoint
+#
+ 	!sudo apt-get install libffi-dev
+#
+  	!buildozer init
+##### Change the buildozer.spec file as per the one in the repository. Save it, and enter the following command:
+
+	!buildozer -v android debug
