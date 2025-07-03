@@ -18,7 +18,14 @@ Follow these steps to get started with the Time Tracker app:
 Install Dependencies: Make sure you have Python, Kivy, Pandas and OpenPyXL installed on your system.
 Or, use the code below: 
 
-	pip install -r requirements.txt
+ 	# Create a new virtual environment
+	python3 -m venv myenv
+
+	# Activate the virtual environment
+	source myenv/bin/activate
+	
+ 	# Now you can install the dependencies in your requirements.txt
+  	pip install -r requirements.txt
 
 ##### You dont need to use our thelab.kv file
 ##### The main.py file takes care of everything
